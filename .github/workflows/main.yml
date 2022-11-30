@@ -55,7 +55,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           
-      - name: docker push
+      - name: docer push
         run: | 
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/was:v${{ env.RELEASE_VERSION }}
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/was:latest
